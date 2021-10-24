@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <!-- Title -->
+        <h1 style="text-align: center">TicTacToe</h1>
+
+        <div id="playerNames" class="d-flex justify-content-center" id="form">
+            <div class="playerNames">
+                <label>Player 1: </label>
+                <input type="text" id="player1" name="player1">
+            </div>
+            <div class="playerNames">
+                <label>Player 2: </label>
+                <input type="text" id="player2" name="player2">
+            </div>
+            <button class="submitPlayerNames">OK</button>
+        </div>
+
+        <!-- Grid -->
+        <div id="game" class="game">
+            <div class="d-flex justify-content-center">
+                <div data-cell-index="0" class="cell cell1"></div>
+                <div data-cell-index="1" class="cell cell2"></div>
+                <div data-cell-index="2" class="cell cell1"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div data-cell-index="3" class="cell cell2"></div>
+                <div data-cell-index="4" class="cell cell1"></div>
+                <div data-cell-index="5" class="cell cell2"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div data-cell-index="6" class="cell cell1"></div>
+                <div data-cell-index="7" class="cell cell2"></div>
+                <div data-cell-index="8" class="cell cell1"></div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <!-- Game state -->
+                <h2 id="gameState"></h2>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <!-- Reset game -->
+                <button class="resetButton">Reset game</button>
+            </div>
+        </div>
+
+    <!-- Include scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
